@@ -1,0 +1,152 @@
+.offers-inner-wrapper{
+    background-color: rgb(34, 94, 96);/*#ffbb00*/
+    padding: 30px 0;
+    border: 6px solid ghostwhite;
+    outline: 5px solid rgba(0, 0, 0, 0.427);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+    margin:40px 6px;
+    margin: 0 10%;
+    color: #fff;
+}
+.offer-h1{
+    color: cadetblue;
+}
+.offers-signUp{
+    font-weight: 900;
+    color: #fff;
+}
+
+.title-h1{
+    font-size: 60px;
+    color: rgb(0, 247, 255);
+    text-shadow: 5px 5px 20px rgb(0, 247, 255);
+}
+
+.deals-div{
+    display: flex;
+    flex: 2;
+    padding: 30px 10%;
+    gap: 20px;
+}
+.deals-div .crazy-deal, .deals-div .upcoming-deal{
+    flex: 1;
+    padding: 50px 30px;
+}
+.deals-div .crazy-deal{
+    background-color: gray;
+    border-radius: 5px 0 0 5px;
+    color: #fff;
+}
+.deals-div .upcoming-deal{
+    border-radius: 0 5px 5px 0;
+    color: gray;
+    box-shadow: 2px 2px 10px rgba(128, 128, 128, 0.314);
+}
+.crazy-deal h3 , .upcoming-deal h3{
+    font-weight: 500;
+    font-size: 20px;
+    margin-bottom: -25px;
+}
+.upcoming-deal h3{
+    color: gray;
+}
+.crazy-deal p , .upcoming-deal p{
+    margin-top: -20px;
+}
+
+.crazy-deal button{
+    margin-top: 10px;
+    padding: 10px 30px;
+    background-color: transparent;
+    border: 1px solid #fff;
+    color: #fff;
+    font-weight: 600;
+}
+.upcoming-deal button{
+    margin-top: 10px;
+    padding: 10px 30px;
+    background-color: gray;
+    border: 1px solid gray;
+    border: transparent;
+    color: #fff;
+    font-weight: 600;
+}
+.learnmore-btn:hover{
+    background-color: cadetblue;
+    color: #fff;
+    border: none;
+    border: 1px solid cadetblue;
+}
+.classic-baners{
+    display: flex;
+    padding: 30px 10%;
+    gap: 10px;
+}
+.baner-1,.baner-2,.baner-3{
+    width: 30dvw;
+    padding: 10px;
+    display: flex;
+    height: 200px;
+    flex-direction: column;
+    justify-content: center;
+}
+.classic-baners .baner-1{
+    background-image: url('../images/b4.jpg');
+    background-size: cover;
+
+}
+.classic-baners .baner-2{
+    background-image: url('../images/b7.jpg');
+    background-size: cover;
+}
+.classic-baners .baner-3{
+    background-image: url('../images/b18.jpg');
+    background-size: cover;
+}
+.baner-1 h1, .baner-2 h1, .baner-3 h1{
+    color: #fff;
+    font-size: 25px;
+}
+.baner-1 p, .baner-2 p, .baner-3 p{
+    color: red;
+    font-size: 20px;
+    font-weight: 600;
+    outline: none;
+    border: none;
+    margin-top: -20px;
+}
+@media screen and (max-width:745px) {
+    .title-h1{
+        font-size: 30px;
+    }
+    .offers-signUp{
+        font-weight: 400;
+        color: #fff;
+    }
+    .offer-h1{
+        font-size: 11px;
+    }
+    .offers-inner-wrapper{
+        height: 10%;
+        border: transparent;
+        outline: transparent;
+        margin: 0;
+        color: #fff;
+    }
+    .deals-div{
+        display: flex;
+        flex-direction: column;
+    }
+    .classic-baners{
+        display: flex;
+        flex-direction: column;
+    }
+    .baner-1,.baner-2,.baner-3{
+        width: 75dvw;;
+    }
+    
+}

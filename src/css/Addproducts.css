@@ -1,0 +1,114 @@
+.add-products-wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.product-image{
+    width: 300px;
+    height: 300px;
+}
+
+.product-images-wrapper{
+    width: 330px;
+    position: relative;
+    padding: 15px;
+}
+
+.product-images-wrapper .left-btn{
+    position: absolute;
+    top: 50%;
+    left: 0;
+}
+.product-images-wrapper .right-btn{
+    position: absolute;
+    top: 50%;
+    right: 0;
+}
+
+.send-child-div{
+    display: flex;
+}
+.image-container{
+    display: flex;
+    min-width: 320px;
+    max-width: 320px;
+    height: 320px;
+    overflow: hidden;
+    scroll-behavior: smooth;
+}
+.image-container .product-images{
+    width: 320px;
+    height: 320px;
+}
+
+.product-images-wrapper .left-btn,.product-images-wrapper .right-btn{
+    background-color: rgba(0, 0, 0, 0.252);
+    border: transparent;
+    outline: transparent;
+    padding: 5px 10px;
+    color: #fff;
+    font-weight: 900;
+}
+.add-product-inner{
+    padding: 20px 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+.product-details-div{
+    display: flex;
+    flex-direction: column;
+    padding: 10px 50px;
+    row-gap: 20px;
+    align-items: center;
+}
+.product-inputs{
+    width: 500px;
+    padding: 10px;
+}
+.select-product-images-btn, .add-new-product-btn{
+    color: #fff;
+    padding: 10px;
+    border: transparent;
+    outline: transparent;
+    font-weight: 600;
+
+}
+.select-product-images-btn{
+    background-color: #00000099;
+    margin-top: 10px;
+    width: 200px;
+} 
+.add-new-product-btn{
+    background-color: cadetblue;
+    width: 200px;
+}
+
+.product-inputs:focus{
+    outline: 2px solid cadetblue;
+    border: transparent;
+}
+
+@media screen and (max-width:745px){
+    .send-child-div{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .product-inputs{
+        width: 300px;
+        padding: 5px;
+    }
+    .product-details-div{
+        display: flex;
+        flex-direction: column;
+        padding: 10px 50px;
+        gap: 10px;
+        align-items: center;
+    }
+    .add-new-product-btn{
+        margin-top: 30px;
+    }
+}

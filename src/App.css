@@ -1,0 +1,6 @@
+h1,h2,p{
+  cursor: default;
+}
+.sticky-comp{
+  border: 1px solid black;
+}

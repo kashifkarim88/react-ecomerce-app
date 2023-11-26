@@ -1,0 +1,130 @@
+.hero-wrapper{
+    display: flex;
+    height: 80dvh;
+    padding: 0 10%;
+    gap: 100px;
+}
+.hero-wrapper h2{
+    text-align: left;
+}
+.hero-wrapper h1{
+    text-align: left;
+    color: cadetblue;
+    font-size: 60px;
+    margin-top: -10px;
+}
+.hero-wrapper span{
+    color: #000;
+}
+.hero-wrapper p{
+    width: 500px;
+    text-align: left;
+    cursor: default;
+}
+.hero-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    padding: 20vh 0;
+
+}
+
+.get-started-btn{
+    width: 200px;
+    outline: transparent;
+    border: transparent;
+    padding: 10px;
+    background-color: cadetblue;
+    color: #fff;
+    font-weight: 600;
+    border-radius: 5px;
+}
+.get-started-btn:hover{
+    background-color: rgb(55, 150, 153);
+}
+.hero-logo{
+    position: relative;
+}
+.egg {
+    /* Modify size here: */
+    position: absolute;
+    top: 0px;
+    left: 70px;
+    display: block;
+    width: 23dvw;
+    height: 70dvh;
+    background-color: cadetblue;
+    border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+    z-index: -100;
+    animation: inversemovement 5s linear infinite;
+  }
+.egg-1 {
+    /* Modify size here: */
+    position: absolute;
+    top: 0px;
+    left: 70px;
+    display: block;
+    width: 23dvw;
+    height: 70dvh;
+    background-color: rgba(95, 158, 160, 0.248);
+    border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+    z-index: -200;
+    animation: movement 5s linear infinite;
+  }
+  .hero-image{
+    z-index: 1;
+    width: 20dvw;
+    height: 50dvh;
+    position: absolute;
+    top: 13%;
+    left: 100px;
+    animation: movement 5s linear infinite;
+  }
+
+  @keyframes movement {
+    0%, 100% {
+        transform: translateX(0); /* Start and end position is the original position */
+      }
+      25% {
+        transform: translateX(10px); /* Move 20px to the left at 25% of the animation */
+      }
+      75% {
+          transform: translateX(10px);
+      }
+  }
+  @keyframes inversemovement {
+    0%, 100% {
+        transform: translateX(0); /* Start and end position is the original position */
+      }
+      50% {
+        transform: translateX(10px); /* Move 20px to the left at 25% of the animation */
+      }
+      75% {
+          transform: translateX(-10px);
+      }
+  }
+
+  @media screen and (max-width: 745px) {
+    .hero-wrapper{
+        display: flex;
+        flex-direction: column;
+        height: 60dvh;
+    }
+    .hero-logo{
+        display: none;
+    }
+    .hero-wrapper p{
+        width: 80vw;
+        text-align: left;
+        cursor: default;
+        margin-top: -10px;
+    }
+    .hero-text{
+        display: flex;
+        flex-direction: column;
+        justify-content: left;
+        padding: 40px 0;
+    
+    }
+    
+  }

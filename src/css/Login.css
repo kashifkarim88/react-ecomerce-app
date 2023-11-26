@@ -1,0 +1,63 @@
+.login-form, .login-wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.login-form{
+    padding: 10px 50px;
+    margin-top: 20dvh;
+    gap: 10px;
+    border-radius: 5px;
+    box-shadow:5px 5px 30px rgba(14, 14, 14, 0.637);
+    transition: 0.5s ease-in-out;
+}
+
+.login-form:hover{
+    padding: 30px 90px;
+    box-shadow:5px 5px 30px cadetblue;
+}
+
+.login-form h1{
+    background-color: rgba(14, 14, 14, 0.637);
+    color: cadetblue;
+    padding: 5px 0px;
+    width: 300px;
+}
+
+.login-form input{
+    width: 280px;
+    padding: 10px;
+}
+.login-form input:focus{
+    border: transparent;
+    outline: 2px solid cadetblue;
+}
+.login-form button{
+    background-color: cadetblue;
+    color: #fff;
+    font-weight: 600;
+    width: 80px;
+    padding: 10px;
+    border: transparent;
+    transition: 0.3s ease-in-out;
+}
+
+.login-form .login-Btn:hover, .login-Btn:focus{
+    width: 150px;
+    outline: transparent;
+    border: transparent;
+}
+
+.login-form p{
+    color: gray;
+    cursor: pointer;
+}
+
+.login-form p:hover, p:focus{
+    color: cadetblue;
+    text-shadow: 1px 1px 2px cadetblue;
+}
+

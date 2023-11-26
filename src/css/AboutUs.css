@@ -1,0 +1,96 @@
+.about-wrapper{
+    background-color: rgba(50, 49, 49, 0.74);
+    padding: 30px 10dvw;
+}
+.about-title{
+    color: #fff;
+    text-align: center;
+    padding: 30px;
+}
+.about-flex{
+    display: flex;
+    padding: 10px;
+    gap: 10px;
+}
+.about2{
+    padding: 10px;
+    background-color:#fff;
+    border-radius: 5px;
+}
+.about2 h3{
+    color: cadetblue;
+    font-weight: 800;
+    display: inline-block;
+    border-bottom: 2px solid cadetblue;
+}
+
+.about1 h3, .about3 h3{
+    color: #fff;
+    font-weight: 800;
+    display: inline-block;
+    border-bottom: 2px solid #fff;
+}
+.about1 p, .about3 p{
+    color: #fff;
+}
+
+.about1,.about3{
+    padding: 10px;
+    background-color: cadetblue;
+    border-radius: 5px;
+}
+.email-title, .email-txt{
+    color: #fff;
+    text-align: center;
+}
+
+.email-box{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    padding-bottom: 50px;
+}
+.email-input{
+    padding: 10px;
+    width: 250px;
+    border: transparent;
+    outline: transparent;
+    border-radius: 5px;
+}
+.email-btn{
+    width: 100px;
+    padding: 10px;
+    background-color: cadetblue;
+    color: #fff;
+    font-weight: 600;
+    border: transparent;
+    outline: transparent;
+    border-radius: 5px;
+}
+.email-box p{
+    color: #fff;
+}
+
+.footer{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    gap: 10px;
+}
+
+.social-icons{
+    color: cadetblue;
+    transition: 0.3s ease-in-out;
+}
+.social-icons:hover{
+    color: #fff;
+}
+
+@media screen and (max-width:745px) {
+    .about-flex{
+        display: flex;
+        flex-direction: column;
+    }
+    
+}

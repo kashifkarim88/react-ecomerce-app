@@ -1,0 +1,104 @@
+.cart-main-div{
+    padding: 3% 10%;
+}
+.cart-main-div h1{
+    display: inline;
+    border-bottom: 3px solid cadetblue;
+    padding: 10px 0;
+    font-size: 20px;
+}
+.cart-inner-div{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+    margin-top: 40px;
+    align-items: center;
+    gap: 20px;
+}
+
+.cart-item-card{
+    display: flex; 
+    position: relative;
+    align-items: center;
+    width: 550px;
+    box-shadow: 5px 5px 10px rgba(128, 128, 128, 0.314);
+    transition: 0.3s ease-in-out;
+}
+.cart-item-card .image-view-div img{
+    width: 150px;
+    height: 150px;
+    border: 1px solid rgba(128, 128, 128, 0.218);
+    margin-left: 20px;
+    border-radius: 5px;
+}
+
+.cart-item-text p{
+    text-align: left;
+    padding: 10px;
+    width: 100%;
+    height: 15px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.cart-item-card:hover{
+    box-shadow: 5px 5px 10px rgba(128, 128, 128, 0.482);
+}
+
+.cart-item-text :nth-child(1){
+    font-size: 20px;
+    font-weight: 800;
+}
+
+.cart-item-text :nth-child(4){
+    font-weight: 500;
+}
+
+.place-order-btn{
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+    background-color: cadetblue;
+    color: #ffff;
+    border: transparent;
+    outline: transparent;
+    padding: 10px 20px;
+    border-radius: 3px;
+    transition: 0.3s ease-in-out;
+}
+
+.place-order-btn:hover{
+    background-color: rgb(84, 191, 195);
+}
+
+.close-btn{
+    color: rgba(128, 128, 128, 0.401);
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    
+}
+@media screen and (max-width:745px) {
+    .cart-item-card{
+        padding: 25px 0;
+    }
+    .cart-item-card .image-view-div img{
+        width: 100px;
+        height: 100px;
+    }
+    .cart-main-div{
+        padding:15px;
+    }
+    
+    .cart-item-text p{
+        text-align: left;
+        padding: 10px;
+        margin-top: -20px;
+        width: 80%;
+    }
+    .place-order-btn{
+        padding: 5px 10px;
+        border-radius: 3px;
+        transition: 0.3s ease-in-out;
+    }
+}
